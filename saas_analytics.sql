@@ -1,19 +1,3 @@
--- =====================================================================
--- SaaS PRODUCT ANALYTICS  |  MySQL 8.0+   |  ONE FILE
--- Dataset: RavenStack SaaS Subscription & Churn (Kaggle, synthetic)
---
--- HOW TO RUN
---   BLOCK 1 (schema)  -> run first (saas_analytics.py can run it for you)
---   then run saas_analytics.py to load the data
---   BLOCK 2 (data-quality checks), BLOCK 3 (views), BLOCK 4 (analysis)
---   -> run in MySQL Workbench, one query at a time (Ctrl+Enter),
---      or the whole file top to bottom after the data is loaded.
--- The Python script splits this file on the "@@BLOCK" markers below,
--- so do not rename those marker lines.
--- =====================================================================
-
-
--- @@BLOCK 1: SCHEMA ---------------------------------------------------
 CREATE DATABASE IF NOT EXISTS saas_analytics;
 USE saas_analytics;
 
